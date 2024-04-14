@@ -1,0 +1,19 @@
+schema {
+query: Query
+}
+
+type Query {
+    getAllClient: [Client]
+    getClientByEmail(email: String): Client
+}
+
+type Client{
+    id: String
+    name: String
+    lastName: String
+    mobile: String
+    email: String
+    address: String
+}
+
+
